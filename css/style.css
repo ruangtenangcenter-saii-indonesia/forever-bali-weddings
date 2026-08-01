@@ -1412,7 +1412,7 @@ padding:18px 20px;
 
 /* CARD */
 .collection-card{
-    background:red !important;
+    background:white;
     border-radius:20px;
     overflow:hidden;
     box-shadow:0 15px 40px rgba(0,0,0,.08);
@@ -1433,5 +1433,5 @@ padding:18px 20px;
     text-align:center;
 }
 body{
-    background:red !important;
+    background:white;
 }
