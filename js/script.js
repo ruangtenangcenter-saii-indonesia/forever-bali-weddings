@@ -1,0 +1,1 @@
+console.log("Forever Bali Weddings is running!");
