@@ -1307,24 +1307,19 @@ grid-template-columns:1fr;
 }
 
 .package-grid{
-
-grid-template-columns:1fr;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.about,
 
-.packages,
+@media (max-width:768px){
 
-.gallery,
-
-.testimonials,
-
-.faq,
-
-.contact{
-
-padding:90px 25px;
+    .package-grid{
+        grid-template-columns:1fr;
+    }
 
 }
 
