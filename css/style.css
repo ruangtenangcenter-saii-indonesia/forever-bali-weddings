@@ -2688,3 +2688,58 @@ section {
   }
 }
 
+
+/* FINAL HOMEPAGE GRID FIX — desktop only */
+@media (min-width: 769px) {
+
+  /* Forever Wedding Collections — exactly 5 cards in one row */
+  .collection-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .collection-grid .collection-card {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    grid-column: auto !important;
+  }
+
+  .collection-grid .collection-card img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  /* Why Choose Forever Bali Weddings — exactly 4 cards in one row */
+  .why-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .why-grid .why-card {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    grid-column: auto !important;
+  }
+
+  .why-grid .why-card > * {
+    max-width: 100% !important;
+  }
+}
+
+/* Mobile stays stacked */
+@media (max-width: 768px) {
+  .collection-grid,
+  .why-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
