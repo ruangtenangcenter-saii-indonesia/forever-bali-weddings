@@ -276,3 +276,58 @@ section > p {
     font-size: 16px !important;
   }
 }
+
+/* ===== FINAL FIX — COLLECTIONS & WHY CHOOSE ONLY ===== */
+
+/* Forever Wedding Collections: 3 kolom + gambar seragam */
+.collection-grid,
+.package-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+}
+
+.collection-grid .collection-card,
+.package-grid .package-card {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.collection-grid .collection-card img,
+.package-grid .package-card img {
+  width: 100% !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* Why Choose: 3 card baris pertama, card ke-4 di bawah */
+.why-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+}
+
+.why-grid .why-item {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* card ke-4 berada di tengah baris kedua */
+.why-grid .why-item:nth-child(4) {
+  grid-column: 2 !important;
+}
+
+/* Jangan gunakan aturan desktop ini di mobile */
+@media (max-width: 768px) {
+  .collection-grid,
+  .package-grid,
+  .why-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .why-grid .why-item:nth-child(4) {
+    grid-column: auto !important;
+  }
+}
+
