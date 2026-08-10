@@ -1,0 +1,278 @@
+/* =========================================================
+   FOREVER BALI WEDDINGS — PROFESSIONAL HOMEPAGE LAYOUT
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #2b2926;
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* HEADER */
+header {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+header nav {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  padding: 26px 5%;
+}
+
+header nav a {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: opacity .25s ease;
+}
+
+header nav a:hover {
+  opacity: .7;
+}
+
+/* HERO */
+.hero,
+.hero-section {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 88vh !important;
+  height: 88vh !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.hero::before,
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.28) 0%,
+      rgba(0,0,0,.08) 45%,
+      rgba(0,0,0,.42) 100%
+    );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero img,
+.hero-section img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.hero .overlay,
+.hero-section .overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  background: transparent !important;
+}
+
+.hero-content {
+  position: relative !important;
+  z-index: 5 !important;
+  width: min(900px, 90%) !important;
+  margin: auto !important;
+  text-align: center !important;
+  color: #fff !important;
+}
+
+.hero-content h1 {
+  margin: 0 0 18px !important;
+  font-size: clamp(48px, 7vw, 92px) !important;
+  line-height: .95 !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+  color: #fff !important;
+  text-shadow: 0 3px 20px rgba(0,0,0,.25);
+}
+
+.hero-content p {
+  max-width: 650px !important;
+  margin: 0 auto 30px !important;
+  font-size: clamp(18px, 2vw, 25px) !important;
+  line-height: 1.5 !important;
+  color: #fff !important;
+}
+
+.hero-content .btn,
+.hero-content a.btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  padding: 15px 28px !important;
+  margin: 5px !important;
+  border: 1px solid rgba(255,255,255,.8) !important;
+  background: rgba(255,255,255,.96) !important;
+  color: #403b35 !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  transition: all .3s ease;
+}
+
+.hero-content .btn:hover,
+.hero-content a.btn:hover {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+/* GENERAL SECTIONS */
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section:not(.hero):not(.hero-section) {
+  padding: 90px 6%;
+}
+
+/* COLLECTIONS */
+.collection-grid,
+.package-grid,
+.why-grid {
+  width: min(1180px, 100%) !important;
+  margin: 35px auto 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+}
+
+.collection-card,
+.package-card {
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 35px rgba(0,0,0,.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.collection-card:hover,
+.package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0,0,0,.13);
+}
+
+.collection-card img,
+.package-card img {
+  display: block;
+  width: 100% !important;
+  height: 330px !important;
+  object-fit: cover !important;
+}
+
+/* HEADINGS */
+section h2 {
+  text-align: center;
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 400;
+  margin: 0 auto 18px;
+}
+
+section > p {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  header nav {
+    gap: 14px;
+    padding: 18px 15px;
+    flex-wrap: wrap;
+  }
+
+  header nav a {
+    font-size: 10px !important;
+    letter-spacing: 1px;
+  }
+
+  .hero,
+  .hero-section {
+    height: 78vh !important;
+    min-height: 600px !important;
+  }
+
+  .hero-content {
+    width: 90% !important;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(42px, 12vw, 65px) !important;
+  }
+
+  .hero-content p {
+    font-size: 18px !important;
+  }
+
+  .hero-content .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  section:not(.hero):not(.hero-section) {
+    padding: 65px 20px;
+  }
+
+  .collection-grid,
+  .package-grid,
+  .why-grid {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  .collection-card img,
+  .package-card img {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero,
+  .hero-section {
+    min-height: 560px !important;
+    height: 78vh !important;
+  }
+
+  header nav {
+    gap: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 43px !important;
+  }
+
+  .hero-content p {
+    font-size: 16px !important;
+  }
+}

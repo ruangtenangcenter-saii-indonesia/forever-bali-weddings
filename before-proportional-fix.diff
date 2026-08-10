@@ -1,0 +1,15 @@
+diff --git a/index.html b/index.html
+index 1878d79..50b1ea7 100644
+--- a/index.html
++++ b/index.html
+@@ -8,8 +8,9 @@
+     <title>Forever Bali Weddings</title>
+ 
+     <link rel="stylesheet" href="css/style.css?v=20260810">
+-<style>body{outline:15px solid red !important}</style>
+ 
++
++    <!-- homepage-fix disabled -->
+ </head>
+ 
+ <body>
