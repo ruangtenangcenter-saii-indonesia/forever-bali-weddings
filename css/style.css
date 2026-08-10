@@ -2743,3 +2743,35 @@ section {
   }
 }
 
+
+
+/* === HOMEPAGE FINAL GRID — DO NOT REMOVE === */
+@media screen and (min-width: 769px) {
+  .collection-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  .collection-grid > .collection-card {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    grid-column: auto !important;
+  }
+
+  .why-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  .why-grid > .why-card {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    grid-column: auto !important;
+  }
+}
