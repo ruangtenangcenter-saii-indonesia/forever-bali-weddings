@@ -2552,3 +2552,139 @@ section {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* FINAL HOMEPAGE GRID FIX — desktop only */
+@media (min-width: 769px) {
+
+  /* Forever Wedding Collections — 5 cards in ONE row */
+  .collection-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .collection-grid > * {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .collection-grid img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 280px !important;
+    object-fit: cover !important;
+  }
+
+  /* Why Choose Forever Bali Weddings — 4 cards in ONE row */
+  .why-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .why-grid > * {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+/* Mobile — keep cards stacked */
+@media (max-width: 768px) {
+  .collection-grid,
+  .why-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* FINAL HOMEPAGE GRID FIX — desktop only */
+@media (min-width: 769px) {
+
+  /* Forever Wedding Collections — 5 cards in ONE row */
+  .collection-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .collection-grid > * {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .collection-grid img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 280px !important;
+    object-fit: cover !important;
+  }
+
+  /* Why Choose Forever Bali Weddings — 4 cards in ONE row */
+  .why-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .why-grid > * {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+/* Mobile — keep cards stacked */
+@media (max-width: 768px) {
+  .collection-grid,
+  .why-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* FINAL DESKTOP HOMEPAGE GRID FIX */
+@media (min-width: 769px) {
+
+  /* Forever Wedding Collections — 5 cards in ONE row */
+  .collection-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .collection-grid > .collection-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    grid-column: auto !important;
+  }
+
+  /* Why Choose Forever Bali Weddings — 4 cards in ONE row */
+  .why-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .why-grid > .why-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    grid-column: auto !important;
+  }
+
+}
+
+/* Mobile remains stacked */
+@media (max-width: 768px) {
+  .collection-grid,
+  .why-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
