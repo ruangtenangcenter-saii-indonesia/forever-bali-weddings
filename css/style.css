@@ -392,181 +392,111 @@ ul{
 }
 
 /* =========================================================
-   PACKAGES
+   PACKAGES — SCOPED
+   Changes here affect ONLY the Packages section
 ========================================================= */
 
-.packages{
-
-    padding:120px 0;
-
-    background:#faf8f5;
-
+.packages {
+    padding: 120px 0;
+    background: #faf8f5;
 }
 
-.packages h2{
-
-    text-align:center;
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:60px;
-
-    color:#222;
-
-    margin-bottom:20px;
-
+.packages h2 {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    color: #222;
+    margin-bottom: 20px;
 }
 
-.package-subtitle{
-
-    max-width:760px;
-
-    margin:0 auto 70px;
-
-    text-align:center;
-
-    font-size:18px;
-
-    line-height:1.9;
-
-    color:#777;
-
+.packages .package-subtitle {
+    max-width: 760px;
+    margin: 0 auto 70px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #777;
 }
 
-.package-grid{
-
-    width:min(1320px,92%);
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
-
-    gap:40px;
-
-}
-.package-card
-{
-
-    background:#ffffff;
-
-    border-radius:24px;
-
-    overflow:hidden;
-
-    transition:.35s;
-
-    box-shadow:0 18px 45px rgba(0,0,0,.08);
-
+.packages .package-grid {
+    width: min(1320px, 92%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 40px;
 }
 
-.package-card:hover{
-
-    transform:translateY(-12px);
-
-    box-shadow:0 30px 70px rgba(0,0,0,.14);
-
+.packages .package-card {
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: .35s;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .08);
 }
 
-.package-card img{
-
-    width:100%;
-
-    height:270px;
-
-    object-fit:cover;
-
-    transition:.5s;
-
+.packages .package-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .14);
 }
 
-.package-card:hover img{
-
-    transform:scale(1.05);
-
+.packages .package-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    transition: .5s;
 }
 
-.package-content{
-
-    padding:36px;
-
+.packages .package-card:hover img {
+    transform: scale(1.05);
 }
 
-.package-content h3{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:38px;
-
-    color:#222;
-
-    margin-bottom:15px;
-
+.packages .package-content {
+    padding: 36px;
 }
 
-.package-tagline{
-
-    color:#888;
-
-    font-size:16px;
-
-    line-height:1.8;
-
-    margin-bottom:22px;
-
+.packages .package-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 15px;
 }
 
-.package-price{
-
-    font-size:44px;
-
-    font-weight:700;
-
-    color:#D4AF37;
-
-    margin-bottom:8px;
-
+.packages .package-tagline {
+    color: #888;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 22px;
 }
 
-.package-guest{
-
-    color:#999;
-
-    font-size:15px;
-
-    font-weight:600;
-
-    margin-bottom:28px;
-
+.packages .package-price {
+    font-size: 44px;
+    font-weight: 700;
+    color: #D4AF37;
+    margin-bottom: 8px;
 }
 
-.package-content ul{
-
-    padding-left:18px;
-
-    margin-bottom:32px;
-
+.packages .package-guest {
+    color: #999;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 28px;
 }
 
-.package-content li{
-
-    list-style:disc;
-
-    color:#555;
-
-    margin-bottom:12px;
-
-    line-height:1.8;
-
+.packages .package-content ul {
+    padding-left: 18px;
+    margin-bottom: 32px;
 }
 
-.package-content .btn{
+.packages .package-content li {
+    list-style: disc;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
 
-    width:100%;
-
-    justify-content:center;
-
+.packages .package-content .btn {
+    width: 100%;
+    justify-content: center;
 }
 /* =========================================================
    WHY CHOOSE US
@@ -1452,4 +1382,712 @@ body{
     color:#ccc;
     font-size:15px;
     letter-spacing:1px;
+}
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+    background:#1f1f1f;
+    color:#ffffff;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:60px;
+}
+
+.footer p{
+    margin:0;
+    font-size:15px;
+    letter-spacing:0.5px;
+}
+/* =========================================
+   FOREVER WEDDING COLLECTIONS - REFINEMENT
+   ========================================= */
+
+.collections {
+  padding: 100px 6%;
+  background: #faf8f5;
+}
+
+.collections .section-title {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.collections .section-title h2 {
+  margin-bottom: 16px;
+}
+
+.collections .section-title p {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Collection grid */
+.collection-grid {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Individual card */
+.collection-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 0;
+}
+
+.collection-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.11);
+}
+
+/* Card image */
+.collection-card > img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+/* Card content */
+.collection-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px 28px 32px;
+  text-align: center;
+}
+
+.collection-content h3 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.collection-content p {
+  margin: 0 0 24px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.collection-content .btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* Prevent collections from becoming one giant section */
+.collections + section {
+  margin-top: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .collection-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 430px;
+    width: 100%;
+    justify-self: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .collections {
+    padding: 70px 20px;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .collection-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .collection-card > img {
+    height: 280px;
+  }
+
+  .collection-content {
+    padding: 26px 22px 30px;
+  }
+}
+
+
+/* =========================================
+   FINAL FIX - FOREVER WEDDING COLLECTIONS
+   ========================================= */
+
+.collections {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 90px 6%;
+    margin: 0;
+    overflow: visible;
+}
+
+.collections .collection-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.collections .collection-card {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.collections .collection-card:last-child {
+    grid-column: auto;
+    max-width: none;
+}
+
+.collections .collection-card > img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.collections .collection-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 26px 30px;
+}
+
+.collections .collection-content h3 {
+    margin: 0 0 12px;
+}
+
+.collections .collection-content p {
+    margin: 0 0 22px;
+    flex: 1;
+}
+
+.collections .collection-content .btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/* Keep the next homepage section clearly separated */
+.collections + section {
+    position: relative;
+    clear: both;
+    margin-top: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .collections .collection-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .collections {
+        padding: 70px 20px;
+    }
+
+    .collections .collection-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 30px;
+    }
+
+    .collections .collection-card > img {
+        height: 260px;
+        min-height: 260px;
+    }
+}
+
+
+/* =========================================
+   HOMEPAGE LAYOUT FIX
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero,
+.hero-section {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hero img,
+.hero-section img {
+  width: 100%;
+  max-width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.collections {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 40px;
+}
+
+.collection-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.collection-card {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.collection-card > img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.collection-content {
+  width: 100%;
+  padding: 30px;
+}
+
+.why-us {
+  width: 100%;
+  overflow: hidden;
+}
+
+.why-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.why-card {
+  width: 100%;
+  min-width: 0;
+  padding: 35px;
+}
+
+/* Desktop container */
+.container {
+  width: min(1200px, calc(100% - 80px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero img,
+  .hero-section img {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+
+  .collections {
+    padding: 60px 20px;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .collection-card > img {
+    height: 260px;
+  }
+
+  .hero img,
+  .hero-section img {
+    height: 60vh;
+  }
+}
+
+/* =========================================================
+   FINAL HOMEPAGE LAYOUT FIX
+   ========================================================= */
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.hero,
+.hero-section,
+.hero-banner {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img,
+.hero-section img,
+.hero-banner img {
+  width: 100%;
+  max-width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.collections,
+.collections-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 90px 40px;
+  box-sizing: border-box;
+}
+
+.collection-grid,
+.collections .collection-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.collection-card {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.collection-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 28px;
+}
+
+.why-us,
+.contact-container,
+.faq-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.why-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.why-card {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .collection-grid,
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .collections,
+  .collections-section {
+    padding: 60px 20px;
+  }
+
+  .collection-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero img,
+  .hero-section img,
+  .hero-banner img {
+    height: 60vh;
+    min-height: 420px;
+  }
+}
+
+
+/* =========================================================
+   FINAL HOMEPAGE LAYOUT FIX - FOREVER BALI WEDDINGS
+   ========================================================= */
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    background: #f8f5ef !important;
+}
+
+/* Semua gambar tidak boleh meluber */
+img {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* HERO */
+.hero,
+.hero-section {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 680px !important;
+    height: 78vh !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+.hero img,
+.hero-section img,
+.hero-image {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: absolute !important;
+    z-index: 5 !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: min(900px, calc(100% - 48px)) !important;
+    max-width: 900px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+}
+
+/* SECTION UMUM */
+section {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+/* COLLECTIONS */
+.collections {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box !important;
+}
+
+.collection-grid {
+    width: 100% !important;
+    max-width: 1120px !important;
+    margin: 35px auto 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 28px !important;
+    box-sizing: border-box !important;
+}
+
+.collection-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+.collection-card img {
+    display: block !important;
+    width: 100% !important;
+    height: 320px !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.collection-content {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* WHY US */
+.why-us {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.why-grid {
+    width: min(1100px, calc(100% - 80px)) !important;
+    margin: 40px auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+.why-card {
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 35px !important;
+}
+
+/* CONTAINER */
+.container,
+.contact-container,
+.faq-container {
+    width: min(1200px, calc(100% - 80px)) !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .collection-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero,
+    .hero-section {
+        min-height: 560px !important;
+        height: 72vh !important;
+    }
+
+    .hero-content {
+        width: calc(100% - 32px) !important;
+    }
+
+    .collections {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .collection-grid,
+    .why-grid {
+        width: calc(100% - 40px) !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .collection-card img {
+        height: 260px !important;
+    }
+
+    .container,
+    .contact-container,
+    .faq-container {
+        width: calc(100% - 40px) !important;
+    }
 }
