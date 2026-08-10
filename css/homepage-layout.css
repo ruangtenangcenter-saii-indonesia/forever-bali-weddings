@@ -66,3 +66,58 @@
     height: 240px !important;
   }
 }
+
+/* =====================================================
+   FINAL HOMEPAGE GRID
+   Collections = 5 columns
+   Why Choose = 4 columns
+   ===================================================== */
+
+/* Forever Wedding Collections */
+.collection-grid,
+.package-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  width: 100% !important;
+}
+
+.collection-grid > *,
+.package-grid > * {
+  width: 100% !important;
+  min-width: 0 !important;
+  grid-column: auto !important;
+}
+
+.collection-grid img,
+.package-grid img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+
+/* Why Choose Forever Bali Weddings */
+.why-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  width: 100% !important;
+}
+
+.why-grid > * {
+  width: 100% !important;
+  min-width: 0 !important;
+  grid-column: auto !important;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .collection-grid,
+  .package-grid,
+  .why-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
